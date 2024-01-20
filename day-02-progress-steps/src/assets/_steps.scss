@@ -1,0 +1,55 @@
+.stepper {
+    &__main-container {
+        display: flex;
+        align-items: center;
+        width: 400px;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 30px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            background-color: $line-border-empty;
+            width: 100%;
+            height: 3px;
+            z-index: 10;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        border: 3px solid $line-border-empty;
+        border-radius: 50%;
+        transition: all 0.3s ease-in;
+        z-index: 50;
+        background-color: #fff;
+
+        &.active {
+            border-color: $line-border-fill;    
+        }
+    }
+
+    &__progress {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background-color: $line-border-fill;
+        height: 3px;
+        z-index: 20;
+        transition: width 0.3s linear;
+    }
+
+    &__button-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

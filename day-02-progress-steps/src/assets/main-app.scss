@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+$line-border-fill: #3498db;
+$line-border-empty: #e0e0e0;
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Muli', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex; 
+    align-items: center;
+    justify-content: center
+}
+
+@import './layout';
+@import './buttons';
+@import './steps';

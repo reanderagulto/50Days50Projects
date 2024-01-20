@@ -1,0 +1,18 @@
+.btn {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $line-border-fill;
+    color: white;
+    padding: 8px 30px;
+    margin: 5px;
+    border-radius: 6px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:disabled {
+        background: $line-border-empty;
+    }
+}
