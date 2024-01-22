@@ -1,0 +1,69 @@
+.navigation {
+    &__circle {
+        background-color: $primary-accent;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        position: relative;
+        transition: transform 0.5s linear;
+
+        &--container {
+            position: fixed;
+            top: -100px;
+            left: -100px;
+        }
+
+        .navigation__button {
+            all: unset;
+            color: $white;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 100px;
+            background: transparent;
+            border: 0;
+            font-size: 26px;
+        }
+
+        #navigation__close {
+            top: 60%;
+            transform: rotate(90deg);
+            transform-origin: top left;
+        }
+
+        #navigation__open {
+            left: 60%;
+        }
+    }
+
+    &__menus {
+        position: fixed;
+        bottom: 40px;
+        left: 0;
+        z-index: 100;
+
+        ul {
+            li {
+                display: flex;  
+                align-items: center;
+                gap: 10px;
+                text-transform: uppercase;
+                color: $white;
+                margin: 40px 0;
+                transition: transform 0.4s ease-in;
+                transform: translateX(-100%);
+
+                & + li {
+                    margin-left: 15px;
+                    transform: translateX(-150%);
+                }
+
+                & + li + li {
+                    margin-left: 30px;
+                    transform: translateX(-200%);
+                }
+            }
+        }
+    }
+}

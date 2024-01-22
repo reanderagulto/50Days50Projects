@@ -1,0 +1,22 @@
+.main-section {
+    &__container {
+        background-color: #fafafa;
+        transform-origin: top left;
+        transition: transform 0.5s linear;
+        min-height: 100vh;
+        padding: 50px;
+
+        &.shown {
+            transform: rotate(-20deg);
+
+            .navigation__circle {
+                transform: rotate(-70deg);
+            }
+
+            & + nav li {
+                transform: translateX(0);
+                transition-delay: 0.3s;
+            }
+        }
+    }
+}

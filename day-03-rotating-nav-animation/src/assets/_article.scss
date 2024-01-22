@@ -1,0 +1,31 @@
+.article {
+    &__container {
+        max-width: 1000px;
+        margin: 50px auto;
+    }
+
+    &__header {
+        margin: 0;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    &__sub-header {
+        font-size: 1.17em;
+        font-weight: bold;
+    }
+
+    &__sub-title {
+        color: $primary-gray;
+        font-style: italic;
+    }
+
+    &__content {
+        color: $secondary-black;
+        line-height: 1.5;
+    }
+
+    &__image {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+$primary-accent: #ff7979;
+$primary-black: #222;
+$secondary-black: #333;
+$primary-gray: #555;
+$white: #FFF;
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: $primary-black;
+    background-color: $secondary-black;
+}
+
+@import './navigation';
+@import './layout';
+@import './article';
