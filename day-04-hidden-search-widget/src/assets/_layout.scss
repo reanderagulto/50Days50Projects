@@ -1,0 +1,23 @@
+.main-section {
+    &__container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.search-widget {
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.active {
+            .text-input {
+                width: 200px;
+                padding: 0 15px
+            }
+        }
+    }
+}
