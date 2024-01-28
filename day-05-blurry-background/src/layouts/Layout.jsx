@@ -5,15 +5,31 @@ const Layout = () => {
 
   const [counter, setCounter] = useState(0);
 
-  const timerId = setInterval(() => {
-      
-    setCounter(counter + 1);
+  const interval = 30;
 
-  }, 30);
+  function scale (number, inMin, inMax, outMin, outMax) {
+    return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
+  }
 
   useEffect(() => {
-    console.log(counter);
-  }, [counter]);
+
+    const timerId = setInterval(() => {
+      setCounter(count => {
+        if(count <= 99) {
+          return count + 1; 
+        }
+        else {
+          clearInterval(timerId); 
+          return count;
+        }
+      })
+    }, interval);
+
+    return(() => {
+      clearInterval(timerId);
+    });
+
+  }, [])
 
   return (
     <div className="main-section__container">
@@ -21,10 +37,14 @@ const Layout = () => {
           className="loading--background" 
           style={{
             backgroundImage: `url(${backgroundImage})`,
+            filter: `blur(${scale(counter, 0, 100, 30, 0)}px)`
           }}
         ></div>
         <div 
           className="loading--counter"
+          style={{
+            opacity: `${scale(counter, 0, 100, 1, 0)}`
+          }}
         >
           {counter}%
         </div>
