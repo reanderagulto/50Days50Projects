@@ -1,0 +1,10 @@
+.main-section {
+    &__container {
+        width: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}

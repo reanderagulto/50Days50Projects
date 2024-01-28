@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$primary-color: #4682b4;
+$secondary-color: #efedd6;
+$white-color: #fff;
+$black-color: #000;
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    background: $secondary-color;
+}
+
+main {
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+@import './layout';
+@import './cards';
