@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+$white: #FFF;
+$black: #000;
+$steel-blue: #4682b4;
+$light-blue: #add8e6;
+$light-black: rgba(0, 0, 0, 0.4);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    font-family: "Muli", sans-serif;
+    background: $steel-blue;
+    color: $white;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: $light-blue;
+    text-decoration: none;
+}
+
+@import './layout';
+@import './form-control';
+@import './login-form';
