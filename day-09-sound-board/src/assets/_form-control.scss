@@ -1,0 +1,23 @@
+.form-control {
+    &__button {
+        all: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $secondary-color;
+        padding: 1.5rem 3rem;
+        font-size: 1.2rem;
+        font-family: inherit;        
+        border: 0;
+        border-radius: 5px;
+        cursor: pointer;
+        color: $white;
+        max-width: 300px;
+        width: 100%;
+
+        @media screen and (min-width: 1025px) {
+            max-width: 100%;
+            width: max-content;
+        }
+    }
+}
