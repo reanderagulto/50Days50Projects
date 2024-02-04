@@ -1,0 +1,39 @@
+.m {
+    &-auto {
+        margin: auto !important;
+    }
+
+    &x {
+        &-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &y {
+        &-auto {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+}
+
+.text {
+    &-center {
+        text-align: center;
+    }
+
+    &-left {
+        text-align: left;
+    }
+
+    &-right {
+        text-align: right;
+    }
+
+    &-inactive { 
+        margin: 0;
+        opacity: 0.5;
+        letter-spacing: 2px;
+    }
+}
