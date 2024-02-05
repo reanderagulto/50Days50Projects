@@ -1,11 +1,11 @@
 import React from 'react';
-import DadJokes from '../section/DadJokes';
+import Keycodes from '../section/Keycodes';
 
 const Layout = () => {
   
   return (
     <section className={`main-section__container`}>
-      <DadJokes />
+      <Keycodes />
     </section>
   )
 }
