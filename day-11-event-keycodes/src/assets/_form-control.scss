@@ -1,0 +1,29 @@
+.form-control {
+    &__button {
+        all: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $secondary-color;
+        padding: 14px 40px;
+        font-size: 1.2rem;
+        font-family: inherit;        
+        border: 0;
+        border-radius: 10px;
+        cursor: pointer;
+        color: $white;
+        max-width: 100%;
+        width: 100%;
+        box-shadow: $box-shadow-2;
+        transition: all 0.3s ease;
+
+        &:active {
+            transform: scale(0.98);
+        }
+
+        @media screen and (min-width: 1025px) {
+            max-width: 100%;
+            width: max-content;
+        }
+    }
+}
