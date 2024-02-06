@@ -1,11 +1,11 @@
 import React from 'react';
-import Keycodes from '../section/Keycodes';
+import Faqs from '../section/Faqs';
 
 const Layout = () => {
   
   return (
-    <section className={`main-section__container`}>
-      <Keycodes />
+    <section className={`main-section__container`}>      
+      <Faqs />
     </section>
   )
 }
