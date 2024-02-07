@@ -1,0 +1,31 @@
+.main-section {
+    &__container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        @media screen and (min-width: 640px) {
+            justify-content: center;
+        }
+
+        @media screen and (min-width: 1025px) {
+            flex-direction: row;
+        }
+    }
+
+    &__button-container {
+        width: 100%;
+        max-width: 300px;
+
+        @media screen and (min-width: 640px) {
+            max-width: 300px;
+        }
+
+        @media screen and (min-width: 1025px) {
+            width: max-content;
+        }
+    }
+}

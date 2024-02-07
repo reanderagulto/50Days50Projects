@@ -1,0 +1,45 @@
+.keycode {
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+
+        @media screen and (min-width: 640px) {
+            flex-direction: row;
+        }
+    }
+
+    &__header {
+        width: 100%;
+        color: $gray;
+        font-size: 14px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    &__item {
+        display: flex; 
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+        &--container {
+            background-color: $secondary-color;        
+            box-shadow: $box-shadow-1;
+            border: 1px solid $gray-light;
+            padding: 20px;
+            max-width: 100%;
+            min-width: 150px;
+            justify-content: center;
+        }
+
+        &--label {
+            margin: 0;
+        }
+    }
+
+    &__empty-state {
+        margin: 0;
+    }
+}
